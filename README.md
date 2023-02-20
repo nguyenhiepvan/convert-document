@@ -9,7 +9,7 @@ run this application stand-alone, this is not recommended. For normal usage, you
 latest stable image off DockerHub and run it like this:
 
 ```shell
-docker pull hiepnguyenvan/convert-document
+docker pull hiepnguyenvan/convert-document:v0.1
 docker run -p 3000:3000 -ti hiepnguyenvan/convert-document
 ```
 
