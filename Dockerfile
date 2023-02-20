@@ -16,6 +16,7 @@ RUN apt-get -qq -y update \
 COPY ./fonts /usr/share/fonts/
 
 RUN fc-cache -fv && fc-list | grep "VNI"
+RUN pip3 install --upgrade setuptools
 RUN pip3 install --no-cache-dir -q aiohttp pantomime>=0.3.2 pyicu>=2.0.6
 RUN mkdir -p /convert
 COPY setup.py /convert
